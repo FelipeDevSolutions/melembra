@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif; 
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+#background-video {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background-position: center;
+}
+
+
+header  {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%; 
+   padding: 20px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 99;
+   backdrop-filter: blur(20px);
+
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.Criador {
+    font-size: 1em;
+    color: #fff;
+    user-select: none;
+    position: absolute;
+    margin-left: 188px;
+    margin-top: 11px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnConfigurar {
+   width: 200px;
+   height: 50px;
+   background: transparent;
+   border: 2px solid #fff;
+   outline: none;
+   border-radius: 6px;
+   cursor: pointer; 
+   font-size: 1.1em;
+   color: #fff;
+   font-weight: 500;
+   margin-left: 40px;
+   transition: .5s;
+}
+
+.navigation .btnConfigurar:hover {
+    background: #fff;
+    color: #162938;
+}
+
+.wrapper{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background: transparent;
+    border: .1px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgb(4, 27, 57);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 5px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .2s ease, height .2s ease;
+    
+}
+
+.wrapper .active{
+    height: 350px;
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background:rgb(34, 153, 190);
+    color:#162938;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    border-bottom-left-radius: 15px;
+    cursor: pointer;
+}
+
+.wrapper .wrapper-title{
+    position: absolute;
+    top: 6px;
+    font-size: 1.2em;
+}
+
+.wrapper .icon-close:hover{
+    background-color:rgb(34, 153, 190);
+    color: #fff;
+    transition: .1s;
+}
+
+.wrapper div {
+    
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+    
+}
+
+.wrapper button{
+    
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    font-size: 1em;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    transition: .5s;
+}
+
+.wrapper button:hover{
+    background: #fff;
+    color: #162938;
+}
+
+
+
+
+
+

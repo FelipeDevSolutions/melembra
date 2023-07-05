@@ -1,0 +1,16 @@
+{
+  "name": "notificar-java",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Notificar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "play-sound": "^1.1.5",
+    "playwright": "^1.35.1"
+  }
+}
